@@ -1,0 +1,17 @@
+{
+  "name": "virtual-gamepad",
+  "version": "0.1.0",
+  "description": "An application to make a phone into a controller",
+  "main": "start.js",
+  "scripts": {
+    "test": "node start.js"
+  },
+  "author": "FahrulID",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "screenshot-desktop": "^1.12.3",
+    "socket.io": "^3.0.3",
+    "vigemclient": "^1.1.2"
+  }
+}
