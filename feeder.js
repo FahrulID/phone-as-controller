@@ -177,13 +177,16 @@ class feeder
 
             // > Fetching the notification
             this.#_controller.on("notification", data => {
-                console.log("notification", data);
-                // if(data.LargeMotor > 0 || data.SmallMotor > 0)
-                // {
-                //     notificationCallback(true);
-                // } else {
-                //     notificationCallback(false);
-                // }
+                console.log("notification", data)
+                if(this.#_otherButtonNames["VIBRATION"])
+                {
+                    if(data.LargeMotor > 0 || data.SmallMotor > 0)
+                    {
+                        notificationCallback(true);
+                    } else {
+                        notificationCallback(false);
+                    }
+                }
             });
 
             this.#_controller.updateMode = "manual"; // requires manual calls to controller.update()

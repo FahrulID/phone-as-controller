@@ -1,7 +1,7 @@
 {
-  "name": "virtual-gamepad",
+  "name": "phone-as-controller",
   "version": "0.1.0",
-  "description": "An application to make a phone into a controller",
+  "description": "An application to transform a phone into a controller",
   "main": "start.js",
   "scripts": {
     "test": "node start.js"
